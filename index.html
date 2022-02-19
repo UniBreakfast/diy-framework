@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" type="module"></script>
+
+  <title>App with a Framework!</title>
+</head>
+
+<body>
+  <div id="app">
+    <h1>App with a Framework!</h1>
+
+    <h2>Lessons to attend</h2>
+
+    <div class="toolbar">
+      <button>Add a lesson</button>
+      <button>Cancel lessons</button>
+    </div>
+
+    <ul id="lesson-list" F-source="lessons" F-many>
+      <li>
+        <div class="date">{F}date{F}</div>
+        <div class="time">{F}time{F}</div>
+        <div class="title">{F}title{F}</div>
+        <div class="topic" F-editable>{F}topic{F}</div>
+      </li>
+    </ul>
+  </div>
+</body>
+
+</html>
